@@ -72,34 +72,158 @@
 // }
 
 //task7
-let a = 7;
-let b = 4;
-let c = 2;
+// let a = 0;
+// let b = 1;
+// let c = 9;
 
-let max;
-let min;
-if (a > b && a > c) {
-  if (b > c) {
-    max = a * 100 + b * 10 + c;
-    min = c * 100 + b * 10 + a;
-  } else {
-    max = a * 100 + c * 10 + b;
-    min = b * 100 + a * 10 + c;
-  }
-} else if (b > a && b > c) {
-  if (a > c) {
-    max = b * 100 + a * 10 + c;
-    min = c * 100 + a * 10 + b;
-  } else {
-    max = b * 100 + c * 10 + a;
-  }
-} else {
-  if (a > b) {
-    max = c * 100 + a * 10 + b;
-  } else {
-    max = c * 100 + b * 10 + a;
-  }
-}
+// let max;
+// let min;
+// if (a > b && a > c) {
+//   if (b > c) {
+//     max = a * 100 + b * 10 + c;
+//     min = c * 100 + b * 10 + a;
+//   } else {
+//     max = a * 100 + c * 10 + b;
+//     min = b * 100 + a * 10 + c;
+//   }
+// } else if (b > a && b > c) {
+//   if (a > c) {
+//     max = b * 100 + a * 10 + c;
+//     min = c * 100 + a * 10 + b;
+//   } else {
+//     max = b * 100 + c * 10 + a;
+//     min = a * 100 +  c * 10 + b;
+//   }
+// } else {
+//   if (a > b) {
+//     max = c * 100 + a * 10 + b;
+//     min = b * 100 +  a * 10 + c;
+//   } else {
+//     max = c * 100 + b * 10 + a;
+//     min = a * 100 +  b * 10 + c;
+//   }
+// }
 
-console.log("max", max);
-console.log("min", min);
+// console.log("max", max);
+// console.log("min", min);
+
+//question1
+// let katet1=3;
+// let katet2=3;
+// let hipotenuz=8;
+// let squareRoot=Math.sqrt(katet1**2+katet2**2);
+// if(squareRoot===hipotenuz){
+//   console.log(`hipotenuz: ${hipotenuz}. Duzbucaqli ucbucaqdir.`);
+// }else{
+//   console.log(`hipotenuz: ${hipotenuz}. Duzbucaqli ucbucaq deyil.`);
+// }
+
+//question2
+//  let number=625;
+//  let number1 = number % 10;
+//  let number2 =(number-number1) % 100;
+//  let number3=(number-number1-number2) ;
+//  console.log(`${number3/100},${number2/10},${number1}`)
+
+
+//question3
+// let month="January";
+// switch (month) {
+//     case "January":
+//     case "january":
+//        console.log(`${month} has 31 days`);
+//         break;
+//     case "February":
+//     case "february":
+//         console.log(`${month} has 28 days`);
+//         break;
+//     case "March":
+//     case "march":
+//         console.log(`${month} has 31 days`);
+//         break;
+//     case "April":
+//     case "april":
+//         console.log(`${month} has 30 days`);
+//         break;
+//     case "May":
+//     case "may":
+//         console.log(`${month} has 31 days`);
+//         break;
+//     case "June":
+//     case "june":
+//         console.log(`${month} has 30 days`);
+//         break;
+//     case "July":
+//     case "july":
+//         console.log(`${month} has 31 days`);
+//         break;
+//     case "August":
+//     case "august":
+//         console.log(`${month} has 31 days`);
+//         break;
+//     case "September":
+//     case "september":
+//         console.log(`${month} has 30 days`);
+//         break;
+//     case "October":
+//     case "october":
+//         console.log(`${month} has 31 days`);
+//         break;
+//     case "November":
+//     case "november":
+//         console.log(`${month} has 30 days`);
+//         break;
+//     case "December":
+//     case "december":
+//         console.log(`${month} has 31 days`);
+//         break;
+
+//     default:
+//         console.log(`there is not month`);
+//         break;
+// }
+
+//question 4
+// let number=8
+// if(number%2===1){
+//     console.log(`${number} tek reqemdir.`);
+// }else{
+//     console.log(`${number} cut reqemdir.`);
+// }
+
+//question 5
+// let a=5;
+// let b=5;
+// let c=5;
+// if(a===b && a===c && b===c ){
+// console.log(`Beraber terefli ucbucaqdir.`);
+// }else{
+//     console.log(`Beraber terefli ucbucaq deyil.`);
+// }
+
+//question 6
+// let a = 3;
+// let b = 3;
+// let c = 2;
+// if (a === b && c !== b && c !== a) {
+//   console.log(`Beraber yanli ucbucaqdir.`);
+// } else {
+//   console.log(`Beraber yanli ucbucaq deyil.`);
+// }
+
+//question 7
+// let a = 3;
+// let b = 3;
+// let c = 0;
+// if(a>0 && b>0 && c>0){
+//     console.log(`Ucbucagin terefleridir.` );
+// }else{
+//     console.log(`Ucbucagin terefleri deyil.`);
+// }
+
+//question 8
+//  let a = 3;
+//  let b = 5;
+//  [a,b]=[b,a]
+//  console.log(`a:${a},b:${b}`);
+ 
