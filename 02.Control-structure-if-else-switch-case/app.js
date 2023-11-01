@@ -202,9 +202,9 @@
 // }
 
 //question 6
-// let a = 3;
+// let a = 4;
 // let b = 3;
-// let c = 2;
+// let c = 4;
 // if (a === b && c !== b && c !== a) {
 //   console.log(`Beraber yanli ucbucaqdir.`);
 // } else {
@@ -212,7 +212,7 @@
 // }
 
 //question 7
-// let a = 3;
+// let a = 2;
 // let b = 3;
 // let c = 0;
 // if(a>0 && b>0 && c>0){
