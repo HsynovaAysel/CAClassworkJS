@@ -64,30 +64,19 @@
 // console.log(reverseString("Hello"));
 //task6
 let str = "Lorem ipsum dolor sit amet, consectetur  .adipisicing elit. ?!.";
-let string = function (sentence) {
-  let count = 1;
-  for (let i = 0; i < sentence.length; i++) {
-    if (
-      sentence[i] !== " " &&
-      sentence[i] !== "." &&
-      sentence[i] !== "," &&
-      sentence[i] !== "?" &&
-      sentence[i] !== "!"
-    ) {
-      count++;
-    }
-  }
-  return count;
-};
-console.log(string(str));
-
-//task7
-let strLength = function (length) {
-  let maxLength = length[0];
-  for (let i = 1; i < length.length; i++) {
-    if (length[i].length > maxLength.length) {
-      maxLength = length[i];
-    }
-  }
-  return maxLength;
-};
+// let string = function (sentence) {
+//   let count = 1;
+//   for (let i = 0; i < sentence.length; i++) {
+//     if (
+//       sentence[i] !== " " &&
+//       sentence[i] !== "." &&
+//       sentence[i] !== "," &&
+//       sentence[i] !== "?" &&
+//       sentence[i] !== "!"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(string(str));
