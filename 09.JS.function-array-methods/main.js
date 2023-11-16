@@ -1,17 +1,17 @@
 //----------------------------------------------------- TASK 1 -----------------------------------------------------
 //findFirstNotRepeatedChar adlı bir function yaradın. Bu function göndərdiyiniz string-in ilk təkrarlanmayan
 //hərfini qaytarsın. Nəticə =====>> "e"
-let findFirstNotRepeatedChar = (el) => {
-  let str = "";
-  for (let i = 0; i < el.length; i++) {
-    if (el.indexOf(el[i]) === el.lastIndexOf(el[i])) {
-      str = el[i];
-      break;
-    }
-  }
-  return str;
-};
-console.log(findFirstNotRepeatedChar("abacddecz"));
+// let findFirstNotRepeatedChar = (el) => {
+//   let str = "";
+//   for (let i = 0; i < el.length; i++) {
+//     if (el.indexOf(el[i]) === el.lastIndexOf(el[i])) {
+//       str = el[i];
+//       break;
+//     }
+//   }
+//   return str;
+// };
+// console.log(findFirstNotRepeatedChar("abacddecz"));
 
 // ----------------------------------------------------- TASK 2 -----------------------------------------------------
 
@@ -20,30 +20,30 @@ console.log(findFirstNotRepeatedChar("abacddecz"));
 
 // Nəticə: 3
 
-let charCount = (a, b) => {
-  let count = 0;
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] === b) {
-      count++;
-    }
-  }
-  return count;
-};
-console.log(charCount("w3rescource.com", "c"));
+// let charCount = (a, b) => {
+//   let count = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] === b) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(charCount("w3rescource.com", "c"));
 // ----------------------------------------------------- TASK 3 -----------------------------------------------------
 
 // makeId adlı function yaradın. Bu function qəbul etdiyi rəqəm uzunluğunda random ID verməlidir.
 // Məsələn =====>> 4SGqCfrz
-let makeId = (a) => {
-  let str = "";
-  let charList =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  for (let i = 0; i < a; i++) {
-    str += charList.charAt(Math.floor(Math.random() * charList.length));
-  }
-  return str
-};
-console.log(makeId(8));
+// let makeId = (a) => {
+//   let str = "";
+//   let charList =
+//     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//   for (let i = 0; i < a; i++) {
+//     str += charList[Math.floor(Math.random() * charList.length)];
+//   }
+//   return str;
+// };
+// console.log(makeId(8));
 
 // ----------------------------------------------------- TASK 4 -----------------------------------------------------
 
@@ -51,8 +51,18 @@ console.log(makeId(8));
 
 // ----------------------------------------------------- TASK 5 -----------------------------------------------------
 
-// console.log(Arrays_sum([1, 0, 2, 3, 4], [3, 5, 6, 7, 8]));
+// let Arrays_sum = (a, b) => {
+//   let sum = 0;
+//   let count;
+//   for (let i = 0; i < a.length; i++) {
+//     for (let j = 0; j < b.length; j++) {
+//       sum = a[i] + b[j];
 
+//     } 
+//   }
+//  return sum;
+// };
+// console.log(Arrays_sum([1, 0, 2, 3, 4], [3, 5, 6, 7, 8]));
 // Nəticə: =====>> [4, 5, 8, 10, 12]
 
 // ----------------------------------------------------- TASK 6 -----------------------------------------------------
@@ -65,11 +75,14 @@ var arr = [
   [3, 10, 26, 7],
 ];
 
-let array = (a) => {
-  for (let i = 0; i < a.length; i++) {}
-  return `row ${i}`;
-};
-console.log(array(arr));
+// let array = (a,b) => {
+//   for (let i = 0; i < a.length; i++) {
+//    console.log(a[i]);
+//      return `row ${i}`;
+//   }
+
+// };
+// console.log(array(arr));
 // Nəticə: =====>>
 // row 0
 //  1
@@ -96,3 +109,4 @@ console.log(array(arr));
 //  10
 //  26
 //  7
+
