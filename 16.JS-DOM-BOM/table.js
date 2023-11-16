@@ -282,7 +282,7 @@ ascendSortNameBtn.addEventListener("click", function () {
 });
 
 SortBtn.addEventListener("click", function () {
-  if (this.innerText == "ASC") {
+  if (this.innerText === "ASC") {
     this.innerText = "DESC";
     let descendingName = users.sort((a, b) =>
       b.first_name.localeCompare(a.first_name)
@@ -296,22 +296,25 @@ SortBtn.addEventListener("click", function () {
     drawTable(ascendingName);
   }
 });
+
 let newusers = structuredClone(users);
+
 SortAscDescBtn.addEventListener("click", function () {
-  if (this.innerText == "aaa") {
+  let result = "Hello";
+  if (this.innerText === result) {
     this.innerText = "ASC";
     let ascendingName = users.sort((a, b) =>
       a.first_name.localeCompare(b.first_name)
     );
     drawTable(ascendingName);
-  } else if ((this.innerText = "ASC")) {
+  } else if (this.innerText === "ASC") {
     this.innerText = "DESC";
     let descendingName = users.sort((a, b) =>
       b.first_name.localeCompare(a.first_name)
     );
     drawTable(descendingName);
   } else {
-    this.innerText = "aaa";
+    this.innerText = result;
     drawTable(newusers);
   }
 });
