@@ -344,9 +344,9 @@ function drawTable(data) {
 }
 
 drawTable(localProducts);
-let arr =JSON.parse(localStorage.getItem("filter"))||[];
+let arr =JSON.parse(localStorage.getItem("find"))||[];
 function addtoBasket(id) {
   find = localProducts.find((item) => item._id == id);
   arr.push(find);
-  localStorage.setItem("filter", JSON.stringify(arr));
+  localStorage.setItem("find", JSON.stringify(arr));
 }

@@ -320,18 +320,10 @@ let card = document.querySelector(".producs-card");
 localStorage.setItem("products", JSON.stringify(products));
 
 let localProducts = JSON.parse(localStorage.getItem("products"));
-
-let arr =[];
-function addtoBasket(id) {
-  find = localProducts.find((item) => item._id == id);
-  arr.push(find);
-  localStorage.setItem("filter", JSON.stringify(arr));
-}
-
-
-
-let pro=JSON.parse(localStorage.getItem("filter")).forEach((el) => {
-  card.innerHTML += ` <div class="col col-12 col-md-6 col-lg-4">
+let pro = JSON.parse(localStorage.getItem("find"));
+function drawTable(data) {
+  data.forEach((el) => {
+    card.innerHTML += ` <div class="col col-12 col-md-6 col-lg-4">
 <div class="card" style="width: 18rem">
   <img onclick=click("${el._id}") src="${el.thumbnail}" class="card-img-top" alt="..." />
   <div class="card-body">
@@ -348,8 +340,18 @@ let pro=JSON.parse(localStorage.getItem("filter")).forEach((el) => {
   </div>
 </div>
 </div>`;
-});
+  });
+}
+drawTable(pro);
+
+let arr = [];
+function addtoBasket(id) {
+  find = localProducts.find((item) => item._id == id);
+  arr.push(find);
+  localStorage.setItem("find", JSON.stringify(arr));
+}
 
 function removeaddBasket(id) {
- console.log('salam');
+  filter = pro.filter((item) => item.id != id);
+  localStorage.setItem("filter", JSON.stringify(filter));
 }
