@@ -54,3 +54,21 @@ window.addEventListener("keyup", function (e) {
     }
   });
 });
+//MOUSEDOWN
+key.forEach((item) => {
+  item.addEventListener("mousedown", function () {
+    words.innerText += item.innerText;
+    item.style.opacity = "0";
+    item.style.backgroundColor = "#06c06f";
+    item.style.transform = "scale(1.3)";
+    item.style.transition = "150ms";
+  });
+});
+//MOUSEUP
+key.forEach((item) => {
+  item.addEventListener("mouseup", function () {
+    item.style.opacity = "1";
+    item.style.backgroundColor = "darkcyan";
+    item.style.transform = "scale(1)";
+  });
+});
