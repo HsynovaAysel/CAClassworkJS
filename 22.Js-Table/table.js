@@ -700,8 +700,14 @@ let users = [
     gender: "Male",
   },
 ];
+let search = document.querySelector("#search");
+let tBody = document.querySelector("tbody");
+let id = document.querySelector(".id");
+let userName = document.querySelector(".name");
+let iconId = document.querySelector(".id-icon");
+let iconName = document.querySelector(".name-icon");
+iconName.style.display = "none";
 
-tBody = document.querySelector("tbody");
 function drawTable(param) {
   tBody.innerHTML = "";
   param.forEach((item) => {
@@ -716,12 +722,9 @@ function drawTable(param) {
   });
 }
 drawTable(users);
-let id = document.querySelector(".id");
-let userName = document.querySelector(".name");
-let iconId = document.querySelector(".id-icon");
-let iconName = document.querySelector(".name-icon");
 
 id.addEventListener("click", function () {
+  userName.style.color = "black";
   iconId.style.display = "inline-block";
   iconName.style.display = "none";
   iconId.classList.toggle("fa-arrow-up");
@@ -739,13 +742,36 @@ id.addEventListener("click", function () {
   }
 });
 
-iconName.style.display = "none";
-
 userName.addEventListener("click", function () {
   iconName.classList.toggle("fa-arrow-up");
   iconId.style.display = "none";
-  iconId.style.color = "black";
   id.style.color = "black";
+  if (iconName.classList.contains("fa-arrow-up")) {
+    iconName.style.display = "inline-block";
+    let ascendingName = users.sort((a, b) =>
+      b.first_name.localeCompare(a.first_name)
+    );
+    iconName.style.color = "green";
+    userName.style.color = "green";
+    drawTable(ascendingName);
+  } else {
+    iconName.style.display = "inline-block";
+    let ascendingName = users.sort((a, b) =>
+      a.first_name.localeCompare(b.first_name)
+    );
+    iconName.style.color = "red";
+    userName.style.color = "red";
+    drawTable(ascendingName);
+  }
+});
 
-  drawTable(users);
+
+
+search.addEventListener("keyup", function (event) {
+  let filter = users.filter((el) =>
+    `${el.first_name} ${el.last_name}`
+      .toLocaleLowerCase()
+      .includes(event.target.value.toLocaleLowerCase())
+  );
+  drawTable(filter);
 });
