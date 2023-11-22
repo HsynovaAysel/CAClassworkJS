@@ -52,8 +52,17 @@ cont.style.padding = "10px 50px";
 let navElem = document.createElement("nav");
 cont.style.display = "flex";
 cont.style.justifyContent = "space-between";
+cont.style.alignItems= "center";
 let ulElem = document.createElement("ul");
+ulElem.style.display = "flex";
+ulElem.style.gap= "20px";
 let button = document.createElement("button");
+button.style.height='30px'
+button.style.width='100px'
+button.style.backgroundColor='blue'
+button.style.color='white'
+button.style.border='none'
+button.style.borderRadius='10px'
 button.innerText = "Contact";
 navElem.append(ulElem);
 let arr = ["Services", "Projects", "About"];
@@ -64,4 +73,6 @@ arr.forEach((el) => {
   liElem.style.listStyle = "none";
   ulElem.append(liElem);
 });
-cont.append(logo, navElem, button);
+
+cont.append(logo,navElem,button);
+
