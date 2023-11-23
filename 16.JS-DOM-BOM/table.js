@@ -300,7 +300,7 @@ SortBtn.addEventListener("click", function () {
 let newusers = structuredClone(users);
 
 SortAscDescBtn.addEventListener("click", function () {
-  let result = "Hello";
+  let result = "Default";
   if (this.innerText === result) {
     this.innerText = "ASC";
     let ascendingName = users.sort((a, b) =>
