@@ -767,7 +767,7 @@ userName.addEventListener("click", function () {
 
 
 
-search.addEventListener("keyup", function (event) {
+search.addEventListener("input", function (event) {
   let filter = users.filter((el) =>
     `${el.first_name} ${el.last_name}`
       .toLocaleLowerCase()
