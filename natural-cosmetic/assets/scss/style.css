@@ -206,7 +206,7 @@ h2 {
   }
 }
 
-#products .products .products-recommended .contacts-us .contacts-form form button, #about .about .about-box-text-img .box-text button, #about .about .about-img-text .content button, .bg-image .opocity-section #home .home .content-image .content button {
+#products .products .products-recommended .contacts-us .contacts-form form button, #products .products .our-products .products-btn button, #about .about .about-box-text-img .box-text button, #about .about .about-img-text .content button, .bg-image .opocity-section #home .home .content-image .content button {
   outline: none;
   width: 200px;
   height: 48px;
@@ -246,7 +246,7 @@ footer .footer .input-button form input {
   box-shadow: 0 1px 3px rgb(195, 194, 194);
 }
 
-#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .textarea textarea, #products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-email input, #products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-name input {
+#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .textarea textarea, #products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-email input, #products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-name input, #products .products .our-products .products-search input {
   border: none;
   outline: none;
   width: 100%;
@@ -325,7 +325,27 @@ footer .footer .input-button form input {
   .bg-image .opocity-section header .header .menu-icon {
     display: block;
   }
+  .bg-image .opocity-section header .header .nav-icon.show {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 77px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 20px;
+  }
 }
+
+
+
+
+
+
+
+
+
 .bg-image .opocity-section #home .home {
   padding: 130px 0;
 }
@@ -620,6 +640,16 @@ footer .footer .input-button form button:hover {
   text-align: center;
   padding-bottom: 150px;
 }
+#products .products .our-products .products-search {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#products .products .our-products .products-search input {
+  width: 50%;
+  border: 2px solid #626262;
+}
 #products .products .our-products .images {
   display: flex;
   justify-content: space-between;
@@ -639,6 +669,21 @@ footer .footer .input-button form button:hover {
   text-align: center;
   position: absolute;
   bottom: 20px;
+}
+#products .products .our-products .images .image .text i {
+  font-size: 20px;
+}
+#products .products .our-products .products-btn {
+  display: flex;
+  justify-content: center;
+}
+#products .products .our-products .products-btn button {
+  margin: 20px 0;
+  transition: all 0.5s;
+}
+#products .products .our-products .products-btn button:hover {
+  color: #fff;
+  background-color: #ff2b09;
 }
 #products .products .products-recommended {
   padding-bottom: 80px;

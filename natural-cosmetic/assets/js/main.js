@@ -1,32 +1,33 @@
-// let formPro = document.querySelector("form-products");
-// let formFoot = document.querySelector("form-footer");
-// let h4Elem = document.createElement("h4");
-// formPro.addEventListener("submit", function (event) {
-//   event.preventDefault();
+let formPro = document.querySelector("#form-products");
+let formFoot = document.querySelector("#form-footer");
+let h4Elem = document.createElement("h4");
+formPro.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-//   h4Elem.innerText = "Thanks for filling out the form!";
-//   h4Elem.style.padding = "10px";
-//   h4Elem.style.color = "white";
-//   h4Elem.style.backgroundColor = "#70c770";
+  h4Elem.innerText = "Thanks for filling out the form!";
+  h4Elem.style.padding = "10px";
+  h4Elem.style.color = "white";
+  h4Elem.style.backgroundColor = "#70c770";
 
-//   this.append(h4Elem);
-// });
-// formFoot.addEventListener("submit", function (event) {
-//   event.preventDefault();
+  this.append(h4Elem);
+});
+formFoot.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-//   h4Elem.innerText = "Thanks for filling out the form!";
-//   h4Elem.style.padding = "10px";
-//   h4Elem.style.color = "white";
-//   h4Elem.style.backgroundColor = "#70c770";
+  h4Elem.innerText = "Thanks for filling out the form!";
+  h4Elem.style.padding = "10px";
+  h4Elem.style.color = "white";
+  h4Elem.style.backgroundColor = "#70c770";
 
-//   this.append(h4Elem);
-// });
+  this.append(h4Elem);
+});
 
 let menu = document.querySelector("#menu");
-let nav = document.querySelector("nav");
-let header = document.querySelector("header");
+let nav = document.querySelector(".nav-icon");
+
 
 menu.addEventListener("click", function () {
+  nav.classList.toggle("show");
   if (this.classList.contains("fa-bars")) {
     this.classList = "fa-solid fa-xmark";
   } else {
@@ -56,6 +57,7 @@ function drawCards(array) {
     <div class="text">
       <h4>${el.title}</h4>
       <p>$${el.price}.00</p>
+      <i class="fa-regular fa-heart" onclick=heart(this,${el.id})></i>
     </div>`;
     products.append(card);
   });
@@ -79,3 +81,33 @@ searchInput.addEventListener("input", function (event) {
   );
   drawCards(filtered);
 });
+
+let heartIcon = document.querySelector(".fa-heart");
+let supNum = document.querySelector(".count");
+
+let favorites = getFromLocalStorage() || [];
+
+function heart(icon, id) {
+  icon.classList.toggle("fa-solid");
+  if (icon.classList.contains("fa-solid")) {
+    find = data.find((item) => item.id == id);
+    favorites.push(find);
+    setToLocalStorage(favorites);
+    count();
+  } else {
+    filter = favorites.filter((item) => item.id != id);
+    setToLocalStorage(filter);
+    count();
+  }
+}
+
+function setToLocalStorage(arr) {
+  localStorage.setItem("favorites", JSON.stringify(arr));
+}
+function getFromLocalStorage() {
+  return JSON.parse(localStorage.getItem("favorites"));
+}
+function count() {
+  supNum.textContent = favorites.length;
+}
+count();
