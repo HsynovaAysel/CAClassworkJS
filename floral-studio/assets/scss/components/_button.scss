@@ -1,0 +1,26 @@
+%btn {
+    outline: none;
+    width: 170px;
+    height: 48px;
+    border: none;
+    font-family: $font-quicksand;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    color: $header-color;
+    background-color:$nav-color ;
+    transition: all 0.8s;
+    &:hover{
+      background-color:$btn-color ;
+    }
+  }
+  %input {
+    outline: none;
+    width: 81%;
+    border: none;
+    font-family: $font-crimson;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+    background-color:transparent;
+  }

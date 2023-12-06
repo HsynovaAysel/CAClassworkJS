@@ -1,3 +1,4 @@
+// HOME
 #home {
   .carousel-item {
     background-repeat: no-repeat;
@@ -13,59 +14,237 @@
     &.img3 {
       background-image: url("../image/sl4.jpg");
     }
-
     .carousel-text {
-      display: flex;
+      @include flex();
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    }
+    @media screen and (max-width: 767px) {
+      .carousel-text {
+        display: none;
+      }
+    }
+  }
+  button {
+    p {
+      text-decoration-line: overline;
     }
   }
 }
-
-#banner {
+// ABOUT
+#about {
+  background-image: url("../image/background2.jpg");
   padding: 100px 0;
-  .banner {
-    @include flex(space-between);
-    .banner-left {
-      padding: 40px;
+  .about {
+    display: flex;
+    .about-left {
+      padding: 0 120px;
+      background-color: $header-color;
       width: 50%;
-      display: flex;
+      @include flex(center, unset);
+      gap: 15px;
       flex-direction: column;
-      gap: 10px;
+      text-align: left;
+      h1 {
+        color: $white-color;
+      }
+      h5 {
+        color: $white-color;
+      }
+      button {
+        @extend %btn;
+      }
     }
-    .banner-right {
-      display: flex;
-      position: relative;
-      .image-fl2 {
-        position: absolute;
-        right: 50%;
-        top: 80px;
+    .about-right {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      flex-direction: column-reverse;
+      .about-left {
+        width: 100%;
+        padding: 20px;
+      }
+      .about-right {
+        width: 100%;
       }
     }
   }
 }
+// PRICING
 #pricing {
   background-image: url("../image/background1.jpg");
   .pricing {
+    padding: 20px 0;
     .flowers-pricing {
-      padding: 100px 0;
-      text-align: center;
+      padding: 80px 0;
+      .text {
+        h1 {
+          margin-top: 20px;
+        }
+        padding-bottom: 80px;
+        text-align: center;
+      }
       .flowers-pricing-image {
         background-color: transparent;
-        display: flex;
+        @include flex();
         flex-wrap: wrap;
-        justify-content: center;
         gap: 30px;
         .card-image {
           background-color: transparent;
           text-align: center;
           width: 30%;
-          h3 {
-            margin: 10px 0;
-          }
+          .title-icon{margin: 10px 0;align-items: center;
+            display: flex;
+            justify-content: space-between;
+            i{
+              font-size: 20px;
+              color: $header-color;
+            }
+          } 
           img {
             width: 100%;
+          }
+          p {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+    .events-pricing {
+      .text {
+        text-align: center;
+        h1 {
+          margin-top: 15px;
+        }
+      }
+      .boxes {
+        padding: 80px 0;
+        @include flex();
+        gap: 30px;
+        .box {
+          width: 30%;
+          border: 1px solid $header-color;
+          @include flex();
+          flex-direction: column;
+          gap: 15px;
+          padding: 50px;
+          text-align: center;
+          h2 {
+            span {
+              font-size: 20px;
+            }
+          }
+          h3 {
+            font-weight: 400;
+          }
+          button {
+            @extend %btn;
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .flowers-pricing {
+        .flowers-pricing-image {
+          flex-direction: column;
+          flex-wrap: unset;
+          .card-image {
+            width: 100%;
+          }
+        }
+      }
+      .events-pricing {
+        .boxes {
+          flex-direction: column;
+          .box {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// CONTACTS
+#contacts {
+  .contacts {
+    padding: 100px 0;
+    .text {
+      text-align: center;
+      h1 {
+        margin-top: 20px;
+      }
+    }
+    .images-content {
+      margin-top: 80px;
+      @include flex();
+      .image-card {
+        position: relative;
+        width: 33%;
+        .img {
+          padding: 200px 0;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          &.img-1 {
+            background-image: url("../image/portr1.jpg");
+          }
+          &.img-2 {
+            background-image: url("../image/portr2.jpg");
+          }
+          &.img-3 {
+            background-image: url("../image/portr3.jpg");
+          }
+        }
+        .text {
+          h3 {
+            margin: 20px 0 10px 0;
+            font-weight: 400;
+          }
+          h5 {
+            font-style: italic;
+          }
+        }
+        .icon {
+          @include flex();
+          flex-direction: column;
+          gap: 10px;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          visibility: hidden;
+          a {
+            @include flex();
+            background-color: $white-color;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: $dark-green;
+            font-size: 20px;
+          }
+        }
+        &:hover {
+          .icon {
+            visibility: visible;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .images-content {
+        flex-direction: column;
+        .image-card {
+          margin-top: 50px;
+          width: 100%;
+          .icon {
+            margin-top: 20px;
+            position: unset;
+            flex-direction: unset;
+            visibility: visible;
           }
         }
       }

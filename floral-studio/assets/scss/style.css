@@ -148,8 +148,8 @@ h4 {
 }
 
 a {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   color: #d8e3d5;
   line-height: 24px;
@@ -157,24 +157,32 @@ a {
 
 p {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Crimson Text", serif;
-  color: #226B57;
+  color: #0c5b47;
   line-height: 27px;
   font-style: italic;
 }
 
 h1 {
   font-weight: 300;
-  font-size: 46px;
+  font-size: 50px;
   font-family: "Josefin Sans", sans-serif;
+  color: #226B57;
+  line-height: 51px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
   color: #226B57;
   line-height: 51px;
 }
 
 h5 {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   color: #226B57;
   line-height: 27px;
@@ -182,9 +190,9 @@ h5 {
 
 h3 {
   font-weight: 300;
-  font-size: 20px;
-  font-family: "Crimson Text", serif;
-  color: #226B57;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #0c5b47;
   line-height: 27px;
 }
 
@@ -198,12 +206,40 @@ h3 {
   }
 }
 
+#pricing .pricing .events-pricing .boxes .box button, #about .about .about-left button, footer .footer .footer-left .input-button button {
+  outline: none;
+  width: 170px;
+  height: 48px;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #226B57;
+  background-color: #d8e3d5;
+  transition: all 0.8s;
+}
+#pricing .pricing .events-pricing .boxes .box button:hover, #about .about .about-left button:hover, footer .footer .footer-left .input-button button:hover {
+  background-color: #bdcfb8;
+}
+
+footer .footer .footer-left .input-button input {
+  outline: none;
+  width: 81%;
+  border: none;
+  font-family: "Crimson Text", serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  background-color: transparent;
+}
+
 header {
   padding: 20px 0;
   position: absolute;
   z-index: 2;
   width: 100%;
-  background-color: rgba(34, 107, 87, 0.8);
+  background-color: rgba(34, 107, 87, 0.9);
 }
 header .header {
   display: flex;
@@ -215,6 +251,107 @@ header .header nav ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+header .header nav ul li a {
+  transition: all 400ms;
+  margin-bottom: 10px;
+  border-bottom: 1px solid transparent;
+}
+header .header nav ul li a:hover {
+  border-bottom: 1px solid #E6B17F;
+  color: #E6B17F;
+}
+header .header .menu-icon {
+  color: #0c5b47;
+  font-size: 25px;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+  header .header nav.show {
+    display: block;
+    margin-top: 65px;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 107, 87, 0.9);
+  }
+  header .header nav.show ul {
+    flex-direction: column;
+  }
+  header .header .menu-icon {
+    display: block;
+  }
+}
+
+footer {
+  padding: 80px 0;
+  background-color: #e0ecdc;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .footer-left {
+  width: 45%;
+}
+footer .footer .footer-left img {
+  width: 15%;
+}
+footer .footer .footer-left .input-button {
+  border-bottom: 1px solid #226B57;
+}
+footer .footer .footer-left .input-button button {
+  width: 100px;
+}
+footer .footer .footer-right {
+  width: 45%;
+}
+footer .footer .footer-right nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+}
+footer .footer .footer-right nav ul h3 {
+  margin-bottom: 20px;
+}
+footer .footer .footer-right nav ul li {
+  margin: 10px 0;
+}
+footer .footer .footer-right nav ul li a {
+  font-style: italic;
+  color: #226B57;
+  font-family: "Crimson Text", serif;
+  transition: all 400ms;
+  margin-bottom: 10px;
+  border-bottom: 1px solid transparent;
+}
+footer .footer .footer-right nav ul li a:hover {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+@media screen and (max-width: 767px) {
+  footer .footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .footer .footer-left {
+    width: 100%;
+  }
+  footer .footer .footer-left img {
+    width: 100%;
+  }
+  footer .footer .footer-right {
+    width: 100%;
+  }
+  footer .footer .footer-right nav {
+    flex-direction: column;
+  }
 }
 
 #home .carousel-item {
@@ -234,48 +371,86 @@ header .header nav ul {
 }
 #home .carousel-item .carousel-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  #home .carousel-item .carousel-text {
+    display: none;
+  }
+}
+#home button p {
+  text-decoration-line: overline;
 }
 
-#banner {
+#about {
+  background-image: url("../image/background2.jpg");
   padding: 100px 0;
 }
-#banner .banner {
+#about .about {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-#banner .banner .banner-left {
-  padding: 40px;
+#about .about .about-left {
+  padding: 0 120px;
+  background-color: #226B57;
   width: 50%;
   display: flex;
+  justify-content: center;
+  align-items: unset;
+  gap: 15px;
   flex-direction: column;
-  gap: 10px;
+  text-align: left;
 }
-#banner .banner .banner-right {
-  display: flex;
-  position: relative;
+#about .about .about-left h1 {
+  color: #fff;
 }
-#banner .banner .banner-right .image-fl2 {
-  position: absolute;
-  right: 50%;
-  top: 80px;
+#about .about .about-left h5 {
+  color: #fff;
+}
+#about .about .about-right {
+  width: 50%;
+}
+#about .about .about-right img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  #about .about {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #about .about .about-left {
+    width: 100%;
+    padding: 20px;
+  }
+  #about .about .about-right {
+    width: 100%;
+  }
 }
 
 #pricing {
   background-image: url("../image/background1.jpg");
 }
+#pricing .pricing {
+  padding: 20px 0;
+}
 #pricing .pricing .flowers-pricing {
-  padding: 100px 0;
+  padding: 80px 0;
+}
+#pricing .pricing .flowers-pricing .text {
+  padding-bottom: 80px;
   text-align: center;
+}
+#pricing .pricing .flowers-pricing .text h1 {
+  margin-top: 20px;
 }
 #pricing .pricing .flowers-pricing .flowers-pricing-image {
   background-color: transparent;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 #pricing .pricing .flowers-pricing .flowers-pricing-image .card-image {
@@ -283,9 +458,149 @@ header .header nav ul {
   text-align: center;
   width: 30%;
 }
-#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image h3 {
+#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image .title-icon {
   margin: 10px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image .title-icon i {
+  font-size: 20px;
+  color: #226B57;
 }
 #pricing .pricing .flowers-pricing .flowers-pricing-image .card-image img {
   width: 100%;
+}
+#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image p {
+  margin-bottom: 50px;
+}
+#pricing .pricing .events-pricing .text {
+  text-align: center;
+}
+#pricing .pricing .events-pricing .text h1 {
+  margin-top: 15px;
+}
+#pricing .pricing .events-pricing .boxes {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#pricing .pricing .events-pricing .boxes .box {
+  width: 30%;
+  border: 1px solid #226B57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px;
+  text-align: center;
+}
+#pricing .pricing .events-pricing .boxes .box h2 span {
+  font-size: 20px;
+}
+#pricing .pricing .events-pricing .boxes .box h3 {
+  font-weight: 400;
+}
+#pricing .pricing .events-pricing .boxes .box button {
+  margin: 20px 0;
+}
+@media screen and (max-width: 767px) {
+  #pricing .pricing .flowers-pricing .flowers-pricing-image {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  #pricing .pricing .flowers-pricing .flowers-pricing-image .card-image {
+    width: 100%;
+  }
+  #pricing .pricing .events-pricing .boxes {
+    flex-direction: column;
+  }
+  #pricing .pricing .events-pricing .boxes .box {
+    width: 100%;
+  }
+}
+
+#contacts .contacts {
+  padding: 100px 0;
+}
+#contacts .contacts .text {
+  text-align: center;
+}
+#contacts .contacts .text h1 {
+  margin-top: 20px;
+}
+#contacts .contacts .images-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contacts .contacts .images-content .image-card {
+  position: relative;
+  width: 33%;
+}
+#contacts .contacts .images-content .image-card .img {
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contacts .contacts .images-content .image-card .img.img-1 {
+  background-image: url("../image/portr1.jpg");
+}
+#contacts .contacts .images-content .image-card .img.img-2 {
+  background-image: url("../image/portr2.jpg");
+}
+#contacts .contacts .images-content .image-card .img.img-3 {
+  background-image: url("../image/portr3.jpg");
+}
+#contacts .contacts .images-content .image-card .text h3 {
+  margin: 20px 0 10px 0;
+  font-weight: 400;
+}
+#contacts .contacts .images-content .image-card .text h5 {
+  font-style: italic;
+}
+#contacts .contacts .images-content .image-card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  visibility: hidden;
+}
+#contacts .contacts .images-content .image-card .icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #0c5b47;
+  font-size: 20px;
+}
+#contacts .contacts .images-content .image-card:hover .icon {
+  visibility: visible;
+}
+@media screen and (max-width: 767px) {
+  #contacts .contacts .images-content {
+    flex-direction: column;
+  }
+  #contacts .contacts .images-content .image-card {
+    margin-top: 50px;
+    width: 100%;
+  }
+  #contacts .contacts .images-content .image-card .icon {
+    margin-top: 20px;
+    position: unset;
+    flex-direction: unset;
+    visibility: visible;
+  }
 }/*# sourceMappingURL=style.css.map */

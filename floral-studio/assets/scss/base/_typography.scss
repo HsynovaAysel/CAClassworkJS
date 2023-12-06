@@ -6,38 +6,45 @@ h4 {
   line-height: 22px;
 }
 a {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   font-family: $font-quicksand;
   color: $nav-color;
   line-height: 24px;
 }
 p {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   font-family: $font-crimson;
-  color: $header-color;
+  color: $dark-green;
   line-height: 27px;
   font-style: italic;
 }
 h1 {
   font-weight: 300;
-  font-size: 46px;
+  font-size: 50px;
   font-family: $font-quicksand;
+  color: $header-color;
+  line-height: 51px;
+}
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: $font-crimson;
   color: $header-color;
   line-height: 51px;
 }
 h5 {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   font-family: $font-quicksand;
   color: $header-color;
   line-height: 27px;
 }
 h3{
     font-weight: 300;
-    font-size: 20px;
-    font-family: $font-crimson;
-    color: $header-color;
+    font-size: 25px;
+    font-family: $font-quicksand;
+    color: $dark-green;
     line-height: 27px;
 }
