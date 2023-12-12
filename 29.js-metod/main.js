@@ -68,7 +68,7 @@ const person = {
 //     [age:26]
 //     [city: 'Poland']
 // 4. object-in age propertysini silin.
-delete person.age;
+ delete person.age;
 console.log(person);
 // 5. Ən uzun string value-nu console-a çıxardın.
 
