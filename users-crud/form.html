@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./assets/js/form.js"></script>
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <h2>Logo</h2>
+          <nav>
+            <ul class="my-0">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./form.html">Add User</a></li>
+              <li><a href="./fav.html">Favorite</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="cards-section">
+      <div class="container">
+        <button class="btn btn-primary my-5" id="go-back">Go Back</button>
+        <form>
+          <h1 >ADD USER</h1>
+          <div class="mb-3">
+            <label for="" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              placeholder="Enter a first name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="Enter a last name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter a Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Photo</label>
+            <input
+              type="file"
+              class="form-control"
+              id="file"
+              placeholder="No file chosen"
+            />
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

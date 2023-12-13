@@ -1,0 +1,55 @@
+header {
+  background-color: bisque;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.bg-image {
+  margin-top: 60px;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+td img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+ #cards-section{
+  margin-top: 60px;
+ }
+ form h1{
+  text-align: center;
+ }
+ .cards{
+  margin-top: 100px;
+ }
+ .cards img{
+  width: 100%;
+  height: 200px;
+ }
