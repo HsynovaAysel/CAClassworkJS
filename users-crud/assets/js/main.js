@@ -35,7 +35,6 @@ async function dataDelete(id, btn) {
 
 let users = JSON.parse(localStorage.getItem("users")) || [];
 async function addToFavBtn(id,btn) {
-  
   let res = await axios(`${BASE_URL}/${id}`);
   let result= users.find((item) => item.id === id);
   if (!result) {
