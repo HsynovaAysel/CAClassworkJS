@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.banner img {
+ width: 100%;
+  height: 150px;
+}
+a {
+  text-decoration: none;
+}
+.input-select {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+body.dark-mode {
+  background-color: black;
+}
+body.dark-mode p,
+body.dark-mode h3,
+body.dark-mode h2 {
+  color: white;
+}
+
+body.dark-mode .card,
+body.dark-mode select,
+body.dark-mode input,
+body.dark-mode header {
+  background-color: #2b3945;
+  color: white;
+}
+.card{
+    height: 350px;
+}
+.spinner-border{
+    display: none; 
+    color: white;
+  
+}
