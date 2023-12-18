@@ -1,0 +1,47 @@
+%btn {
+  outline: none;
+  width: 200px;
+  height: 48px;
+  border: 2px solid $orange-color;
+  font-family: $font-syne;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $text-color;
+  background-color: transparent;
+}
+%btn-second {
+  outline: none;
+  width: 30%;
+  padding: 14px;
+  border: 3px solid;
+  font-family: $font-syne;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  color: $text-color;
+  background-color: transparent;
+}
+%input {
+  outline: none;
+  width: 60%;
+  padding: 15px;
+  border: none;
+  font-family: $font-syne;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  color: $gray-color;
+  background-color: $header-color;
+  box-shadow: 0 1px 3px rgb(195, 194, 194);
+}
+%input-textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px;
+  font-family: $font-syne;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+}

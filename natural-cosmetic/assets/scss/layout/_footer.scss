@@ -1,0 +1,68 @@
+footer {
+  background-color: $footer-color;
+  padding: 80px 0;
+  .footer {
+    display: flex;
+    .logo-nav {
+      width: 70%;
+      display: flex;
+      .image {
+        width: 15%;
+        img {
+          width: 100%;
+        }
+      }
+      nav {
+        width: 70%;
+        @include flex(space-around);
+        ul {
+          li {
+            margin-bottom: 10px;
+            a {
+              font-weight: 700;
+              transition: all 0.3s;
+              &:hover {
+                color: $orange-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .input-button {
+      width: 28%;
+      form {
+        margin-top: 20px;
+        input {
+          @extend %input;
+        }
+        button {
+          margin-left: 10px;
+          @extend %btn-second;
+          transition: all 0.5s;
+          &:hover {
+            color: $white-color;
+            background-color: $black-color;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .footer {
+      flex-direction: column;
+      .input-button {
+        margin-top: 50px;
+        width: 100%;
+        form {
+          input {
+            width: 80%;
+          }
+          button {
+            width: 12%;
+          }
+        }
+      }
+    }
+  }
+}

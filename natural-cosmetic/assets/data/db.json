@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "CARE CREAM",
+      "price": 65.00,
+      "image": "./assets/image/item1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "RELIEF LOTION",
+      "price": 60.00,
+      "image": "./assets/image/item2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "RELIEF LOTION",
+      "price": 60.00,
+      "image": "./assets/image/item1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "BODY LOTION",
+      "price": 80.00,
+      "image": "./assets/image/item2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "CARE CREAM",
+      "price": 65.00,
+      "image": "./assets/image/item1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "RELIEF LOTION",
+      "price": 60.00,
+      "image": "./assets/image/item2.jpg"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+.bg-image {
+  background-image: url("../image/background9\ \(1\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .opocity-section {
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    header {
+      background-color: rgba($color: #fff, $alpha: 0.2);
+      padding: 10px 0;
+      .header {
+        @include flex(space-between);
+        .logo-img {
+          @include flex();
+          gap: 30px;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .nav-icon {
+          @include flex();
+          nav {
+            ul {
+              display: flex;
+              gap: 30px;
+              margin: 0 50px;
+              li {
+                padding-bottom: 10px 0;
+                border-bottom: 2px solid transparent;
+                transition: all 0.3s;
+                &:hover {
+                  border-bottom-color: $black-color;
+                }
+              }
+            }
+          }
+          .icon {
+            display: flex;
+            gap: 30px;
+            .fa-brands {
+              font-size: 25px;
+            }
+          }
+        }
+        .menu-icon {
+          font-size: 25px;
+          @include flex();
+          display: none;
+        }
+        @media screen and (max-width: 767px) {
+          .nav-icon {
+            display: none;
+          }
+          .menu-icon {
+            display: block;
+          }
+        }
+      }
+    }
+    #home {
+      .home {
+        padding: 130px 0;
+        .content-image {
+          display: flex;
+          .content {
+            width: 50%;
+            padding: 200px 0;
+            h5 {
+              margin: 20px 0;
+            }
+            button {
+              @extend %btn;
+              transition: all 0.5s;
+              &:hover {
+                color: $white-color;
+                background-color: $orange-color;
+              }
+            }
+          }
+          .image {
+            width: 50%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .content-image {
+            .image {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

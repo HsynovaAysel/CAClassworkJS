@@ -1,0 +1,707 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 51px;
+  color: #232323;
+}
+
+h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #232323;
+}
+
+a {
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+}
+
+h5 {
+  font-family: "EB Garamond", serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #232323;
+  font-style: italic;
+}
+
+h4 {
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #232323;
+}
+
+p {
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #232323;
+}
+
+h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #232323;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+#products .products .products-recommended .contacts-us .contacts-form form button, #about .about .about-box-text-img .box-text button, #about .about .about-img-text .content button, .bg-image .opocity-section #home .home .content-image .content button {
+  outline: none;
+  width: 200px;
+  height: 48px;
+  border: 2px solid #ff2b09;
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #232323;
+  background-color: transparent;
+}
+
+footer .footer .input-button form button {
+  outline: none;
+  width: 30%;
+  padding: 14px;
+  border: 3px solid;
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #232323;
+  background-color: transparent;
+}
+
+footer .footer .input-button form input {
+  outline: none;
+  width: 60%;
+  padding: 15px;
+  border: none;
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #626262;
+  background-color: #F6F4F2;
+  box-shadow: 0 1px 3px rgb(195, 194, 194);
+}
+
+#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .textarea textarea, #products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-email input, #products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-name input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px;
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.bg-image {
+  background-image: url("../image/background9 (1).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.bg-image .opocity-section {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.bg-image .opocity-section header {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+}
+.bg-image .opocity-section header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-image .opocity-section header .header .logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.bg-image .opocity-section header .header .logo-img img {
+  width: 50px;
+  height: 50px;
+}
+.bg-image .opocity-section header .header .nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-image .opocity-section header .header .nav-icon nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0 50px;
+}
+.bg-image .opocity-section header .header .nav-icon nav ul li {
+  padding-bottom: 10px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.bg-image .opocity-section header .header .nav-icon nav ul li:hover {
+  border-bottom-color: #000;
+}
+.bg-image .opocity-section header .header .nav-icon .icon {
+  display: flex;
+  gap: 30px;
+}
+.bg-image .opocity-section header .header .nav-icon .icon .fa-brands {
+  font-size: 25px;
+}
+.bg-image .opocity-section header .header .menu-icon {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .bg-image .opocity-section header .header .nav-icon {
+    display: none;
+  }
+  .bg-image .opocity-section header .header .menu-icon {
+    display: block;
+  }
+}
+.bg-image .opocity-section #home .home {
+  padding: 130px 0;
+}
+.bg-image .opocity-section #home .home .content-image {
+  display: flex;
+}
+.bg-image .opocity-section #home .home .content-image .content {
+  width: 50%;
+  padding: 200px 0;
+}
+.bg-image .opocity-section #home .home .content-image .content h5 {
+  margin: 20px 0;
+}
+.bg-image .opocity-section #home .home .content-image .content button {
+  transition: all 0.5s;
+}
+.bg-image .opocity-section #home .home .content-image .content button:hover {
+  color: #fff;
+  background-color: #ff2b09;
+}
+.bg-image .opocity-section #home .home .content-image .image {
+  width: 50%;
+}
+.bg-image .opocity-section #home .home .content-image .image img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .bg-image .opocity-section #home .home .content-image .image {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+footer .footer {
+  display: flex;
+}
+footer .footer .logo-nav {
+  width: 70%;
+  display: flex;
+}
+footer .footer .logo-nav .image {
+  width: 15%;
+}
+footer .footer .logo-nav .image img {
+  width: 100%;
+}
+footer .footer .logo-nav nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer .logo-nav nav ul li {
+  margin-bottom: 10px;
+}
+footer .footer .logo-nav nav ul li a {
+  font-weight: 700;
+  transition: all 0.3s;
+}
+footer .footer .logo-nav nav ul li a:hover {
+  color: #ff2b09;
+}
+footer .footer .input-button {
+  width: 28%;
+}
+footer .footer .input-button form {
+  margin-top: 20px;
+}
+footer .footer .input-button form button {
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+footer .footer .input-button form button:hover {
+  color: #fff;
+  background-color: #000;
+}
+@media screen and (max-width: 767px) {
+  footer .footer {
+    flex-direction: column;
+  }
+  footer .footer .input-button {
+    margin-top: 50px;
+    width: 100%;
+  }
+  footer .footer .input-button form input {
+    width: 80%;
+  }
+  footer .footer .input-button form button {
+    width: 12%;
+  }
+}
+
+#about .about .about-us h1 {
+  padding: 100px;
+  text-align: center;
+}
+#about .about .about-us .about-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about .about .about-us .about-cards .about-card {
+  padding: 35px;
+  width: 32%;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+#about .about .about-us .about-cards .about-card h4 {
+  margin: 20px 0;
+}
+#about .about .about-us .about-cards .about-card .icon {
+  color: #ff2b09;
+  font-size: 80px;
+}
+#about .about .accordion-section {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about .about .accordion-section .accordion-content {
+  padding: 100px;
+  width: 50%;
+}
+#about .about .accordion-section .accordion-content h5 {
+  margin: 25px 0;
+  color: #626262;
+}
+#about .about .accordion-section .image {
+  width: 50%;
+}
+#about .about .accordion-section .image img {
+  width: 100%;
+}
+#about .about .about-content {
+  background-color: #f2f2f2;
+  padding: 200px;
+}
+#about .about .about-content h1 {
+  text-align: center;
+}
+#about .about .about-content .btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about .about-content .btn a {
+  font-weight: 700;
+  color: #626262;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+#about .about .about-content .btn a:hover {
+  color: #ff2b09;
+  border-bottom-color: #ff2b09;
+}
+#about .about .about-img-text {
+  display: flex;
+  padding: 150px 0;
+}
+#about .about .about-img-text .image {
+  width: 50%;
+}
+#about .about .about-img-text .image img {
+  width: 100%;
+}
+#about .about .about-img-text .content {
+  width: 50%;
+  padding: 100px 40px 100px 80px;
+}
+#about .about .about-img-text .content h5 {
+  margin: 20px 0;
+  color: #626262;
+}
+#about .about .about-img-text .content p {
+  margin-bottom: 20px;
+}
+#about .about .about-img-text .content button {
+  transition: all 0.5s;
+}
+#about .about .about-img-text .content button:hover {
+  color: #fff;
+  background-color: #ff2b09;
+}
+#about .about .about-box-img {
+  display: flex;
+  background-color: #f2f2f2;
+}
+#about .about .about-box-img .image {
+  width: 50%;
+}
+#about .about .about-box-img .image img {
+  width: 100%;
+}
+#about .about .about-box-img .img-text {
+  width: 50%;
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about .about .about-box-img .img-text .image img {
+  width: 100%;
+}
+#about .about .about-box-img .img-text h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+#about .about .about-box-img .img-text .btn a {
+  font-weight: 700;
+  color: #626262;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+#about .about .about-box-img .img-text .btn a:hover {
+  color: #ff2b09;
+  border-bottom-color: #ff2b09;
+}
+#about .about .about-box-text-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 0;
+}
+#about .about .about-box-text-img .box-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#about .about .about-box-text-img .box-text button {
+  transition: all 0.5s;
+}
+#about .about .about-box-text-img .box-text button:hover {
+  color: #fff;
+  background-color: #ff2b09;
+}
+#about .about .about-box-text-img .box-img {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about .about .about-box-text-img .box-img .image {
+  position: relative;
+  width: 46%;
+}
+#about .about .about-box-text-img .box-img .image img {
+  width: 100%;
+}
+#about .about .about-box-text-img .box-img .image .text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+#products .products .our-bestsellers {
+  padding-bottom: 150px;
+}
+#products .products .our-bestsellers h1 {
+  padding-bottom: 150px;
+  text-align: center;
+}
+#products .products .our-bestsellers .images-best {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#products .products .our-bestsellers .images-best .image {
+  position: relative;
+  width: 32%;
+}
+#products .products .our-bestsellers .images-best .image img {
+  width: 100%;
+}
+#products .products .our-bestsellers .images-best .image .text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+#products .products .our-products {
+  padding-bottom: 150px;
+}
+#products .products .our-products h1 {
+  text-align: center;
+  padding-bottom: 150px;
+}
+#products .products .our-products .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#products .products .our-products .images .image {
+  position: relative;
+  width: 30%;
+  margin: 10px 0;
+}
+#products .products .our-products .images .image img {
+  width: 100%;
+}
+#products .products .our-products .images .image .text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+#products .products .products-recommended {
+  padding-bottom: 80px;
+}
+#products .products .products-recommended h1 {
+  text-align: center;
+}
+#products .products .products-recommended .images {
+  opacity: 0.8;
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#products .products .products-recommended .images .image {
+  width: 10%;
+}
+#products .products .products-recommended .images .image img {
+  width: 100%;
+}
+#products .products .products-recommended .contacts-us {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#products .products .products-recommended .contacts-us .contacts-content {
+  width: 30%;
+}
+#products .products .products-recommended .contacts-us .contacts-content h5 {
+  margin: 10px 0;
+  color: #626262;
+}
+#products .products .products-recommended .contacts-us .contacts-content .adress a {
+  transition: all 0.3s;
+}
+#products .products .products-recommended .contacts-us .contacts-content .adress a:hover {
+  color: #ff2b09;
+}
+#products .products .products-recommended .contacts-us .contacts-form {
+  width: 50%;
+}
+#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input {
+  display: flex;
+}
+#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-name {
+  border-left: 3px solid #F6F4F2;
+  border-top: 3px solid #F6F4F2;
+  border-right: 3px solid #F6F4F2;
+  width: 50%;
+}
+#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .input .input-email {
+  border-top: 3px solid #F6F4F2;
+  border-right: 3px solid #F6F4F2;
+  width: 50%;
+}
+#products .products .products-recommended .contacts-us .contacts-form form .input-textarea .textarea {
+  border: 3px solid #F6F4F2;
+}
+#products .products .products-recommended .contacts-us .contacts-form form button {
+  margin: 20px 0;
+  transition: all 0.5s;
+}
+#products .products .products-recommended .contacts-us .contacts-form form button:hover {
+  color: #fff;
+  background-color: #ff2b09;
+}/*# sourceMappingURL=style.css.map */
