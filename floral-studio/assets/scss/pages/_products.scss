@@ -1,0 +1,74 @@
+#home {
+  .carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem;
+    &.img1 {
+      background-image: url("../image/sl1-967x725.jpg");
+    }
+    &.img2 {
+      background-image: url("../image/sl7.jpg");
+    }
+    &.img3 {
+      background-image: url("../image/sl4.jpg");
+    }
+
+    .carousel-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+#banner {
+  padding: 100px 0;
+  .banner {
+    @include flex(space-between);
+    .banner-left {
+      padding: 40px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .banner-right {
+      display: flex;
+      position: relative;
+      .image-fl2 {
+        position: absolute;
+        right: 50%;
+        top: 80px;
+      }
+    }
+  }
+}
+#pricing {
+  background-image: url("../image/background1.jpg");
+  .pricing {
+    .flowers-pricing {
+      padding: 100px 0;
+      text-align: center;
+      .flowers-pricing-image {
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .card-image {
+          background-color: transparent;
+          text-align: center;
+          width: 30%;
+          h3 {
+            margin: 10px 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

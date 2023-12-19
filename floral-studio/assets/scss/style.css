@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  line-height: 22px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #d8e3d5;
+  line-height: 24px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Crimson Text", serif;
+  color: #226B57;
+  line-height: 27px;
+  font-style: italic;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 46px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #226B57;
+  line-height: 51px;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #226B57;
+  line-height: 27px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Crimson Text", serif;
+  color: #226B57;
+  line-height: 27px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  padding: 20px 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(34, 107, 87, 0.8);
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#home .carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20rem;
+}
+#home .carousel-item.img1 {
+  background-image: url("../image/sl1-967x725.jpg");
+}
+#home .carousel-item.img2 {
+  background-image: url("../image/sl7.jpg");
+}
+#home .carousel-item.img3 {
+  background-image: url("../image/sl4.jpg");
+}
+#home .carousel-item .carousel-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner {
+  padding: 100px 0;
+}
+#banner .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner .banner .banner-left {
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#banner .banner .banner-right {
+  display: flex;
+  position: relative;
+}
+#banner .banner .banner-right .image-fl2 {
+  position: absolute;
+  right: 50%;
+  top: 80px;
+}
+
+#pricing {
+  background-image: url("../image/background1.jpg");
+}
+#pricing .pricing .flowers-pricing {
+  padding: 100px 0;
+  text-align: center;
+}
+#pricing .pricing .flowers-pricing .flowers-pricing-image {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image {
+  background-color: transparent;
+  text-align: center;
+  width: 30%;
+}
+#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image h3 {
+  margin: 10px 0;
+}
+#pricing .pricing .flowers-pricing .flowers-pricing-image .card-image img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

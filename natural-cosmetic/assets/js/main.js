@@ -1,6 +1,8 @@
 let formPro = document.querySelector("#form-products");
 let formFoot = document.querySelector("#form-footer");
 let h4Elem = document.createElement("h4");
+let favorites = getFromLocalStorage();
+
 formPro.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -24,7 +26,6 @@ formFoot.addEventListener("submit", function (event) {
 
 let menu = document.querySelector("#menu");
 let nav = document.querySelector(".nav-icon");
-
 
 menu.addEventListener("click", function () {
   nav.classList.toggle("show");
@@ -57,7 +58,11 @@ function drawCards(array) {
     <div class="text">
       <h4>${el.title}</h4>
       <p>$${el.price}.00</p>
-      <i class="fa-regular fa-heart" onclick=heart(this,${el.id})></i>
+      <i class="${
+        favorites.find((item) => item.id === el.id)
+          ? "fa-solid fa-heart"
+          : "fa-regular fa-heart"
+      }" onclick=heart(this,${el.id})></i>
     </div>`;
     products.append(card);
   });
@@ -85,28 +90,28 @@ searchInput.addEventListener("input", function (event) {
 let heartIcon = document.querySelector(".fa-heart");
 let supNum = document.querySelector(".count");
 
-let favorites = getFromLocalStorage() || [];
+
 
 function heart(icon, id) {
-  icon.classList.toggle("fa-solid");
-  if (icon.classList.contains("fa-solid")) {
-    find = data.find((item) => item.id == id);
-    favorites.push(find);
-    setToLocalStorage(favorites);
-    count();
+  if (icon.className === "fa-solid fa-heart") {
+    icon.className = "fa-regular fa-heart";
+    favorites = favorites.filter((item) => item.id !== id);
   } else {
-    filter = favorites.filter((item) => item.id != id);
-    setToLocalStorage(filter);
-    count();
+    icon.className = "fa-solid fa-heart";
+    let find = data.find((item) => item.id === id);
+    favorites.push(find);
   }
+  count();
+  setToLocalStorage(favorites);
 }
 
 function setToLocalStorage(arr) {
   localStorage.setItem("favorites", JSON.stringify(arr));
 }
 function getFromLocalStorage() {
-  return JSON.parse(localStorage.getItem("favorites"));
+  return JSON.parse(localStorage.getItem("favorites")) ?? [];
 }
+
 function count() {
   supNum.textContent = favorites.length;
 }
